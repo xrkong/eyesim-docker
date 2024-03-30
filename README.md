@@ -11,7 +11,7 @@ $ docker compose up
 ![eyesim running in a docker container](eyesim-docker.png)
 
 ## Support Version
-```ubuntu 20.04``` ```EyeSim version```
+```ubuntu 20.04``` ```EyeSim version 1.5.2```
 
 ## Roadmap
 - [x] Readme
