@@ -3,7 +3,8 @@ FROM ubuntu:20.04
 USER root
 RUN apt-get update ; \
   apt-get install -y wget \
-    libx11-dev unzip sudo python3 \
+    libx11-dev unzip sudo \
+    gcc g++ python3 \
     xvfb x11vnc
 RUN useradd -m eyesim
 COPY --chown=eyesim:eyesim . /home/eyesim
