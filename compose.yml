@@ -2,11 +2,12 @@ version: "3"
 
 services:
   eyesim:
-    image: eyesim1.5.2:alpha-0.8
-    container_name: eyesim
+    image: eyesim1.5.2:latest
+    container_name: eyesim-latest
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - .config:/home/eyesim/.config/   
     environment:
       - DISPLAY
+      - XDG_RUNTIME_DIR
     command: eyesim
