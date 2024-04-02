@@ -7,20 +7,20 @@ Select your programming language: c/cpp/python
 
 ### C
 ```
-$ docker build -f c.Dockerfile -t eyesim1.5.2:latest -t eyesim1.5.2:c . 
+docker build -f c.Dockerfile -t eyesim1.5.2:latest -t eyesim1.5.2:c . 
 ```
 ### C++
 ```
-$ docker build -f cpp.Dockerfile -t eyesim1.5.2:latest -t eyesim1.5.2:cpp . 
+docker build -f cpp.Dockerfile -t eyesim1.5.2:latest -t eyesim1.5.2:cpp . 
 ```
 ### Python
 ```
-$ docker build -f python.Dockerfile -t eyesim1.5.2:latest -t eyesim1.5.2:python . 
+docker build -f python.Dockerfile -t eyesim1.5.2:latest -t eyesim1.5.2:python . 
 ```
 
 ### 
 ```
-$ docker compose up
+docker compose up
 ```
 
 ![eyesim running in a docker container](eyesim-docker.png)
