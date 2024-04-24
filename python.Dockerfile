@@ -1,12 +1,13 @@
 FROM ubuntu:20.04 as base
-
+ARG DEBIAN_FRONTEND=noninteractive
 USER root
-RUN apt-get update ; \
+RUN apt-get update && \
   apt-get install -y wget \
     libx11-dev unzip sudo \
     xvfb x11vnc \
-    python3 pip3 \
-    numpy
+    python3 python3-pip 
+
+RUN pip3 install numpy
 
 RUN useradd -m eyesim
 #COPY --chown=eyesim:eyesim . /home/eyesim
